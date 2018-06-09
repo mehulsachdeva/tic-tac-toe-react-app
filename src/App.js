@@ -240,7 +240,6 @@ class App extends Component {
             </div>
             <div className = 'winnerDesc'>{this.state.winner}</div>
             <div className = 'buttonDiv'>
-              <button className = 'undoButton'>UNDO</button>
               <button className = 'resetButton' onClick = {this.resetBoard}>RESET</button>
             </div>
           </center>
