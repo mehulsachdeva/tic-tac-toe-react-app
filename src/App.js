@@ -3,12 +3,12 @@ import './App.css';
 
 var obj = {}
 let i = 0
+let turn = 'Turn of X'
 
 class App extends Component {
   constructor(props){
       super(props)
       this.state = {
-        turn: 'Turn of X',
         content: {},
         winner: '',
         disabled: '',
@@ -30,14 +30,10 @@ class App extends Component {
         ]
 
         if(i%2 == 0){
-          this.setState({
-            turn: 'Turn of O',
-          })
+          turn = 'Turn of O'
           obj[event.target.id] = 'X'
         } else {
-          this.setState({
-            turn: 'Turn of X',
-          })
+          turn = 'Turn of X'
           obj[event.target.id] = 'O'
         }
 
@@ -48,120 +44,206 @@ class App extends Component {
         if(this.state.content[winnerArr[0][0]] == 'X' && this.state.content[winnerArr[0][1]] == 'X' && this.state.content[winnerArr[0][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
-            turn: ''
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[1][0]] == 'X' && this.state.content[winnerArr[1][1]] == 'X' && this.state.content[winnerArr[1][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[2][0]] == 'X' && this.state.content[winnerArr[2][1]] == 'X' && this.state.content[winnerArr[3][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[3][0]] == 'X' && this.state.content[winnerArr[3][1]] == 'X' && this.state.content[winnerArr[3][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[4][0]] == 'X' && this.state.content[winnerArr[4][1]] == 'X' && this.state.content[winnerArr[4][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[5][0]] == 'X' && this.state.content[winnerArr[5][1]] == 'X' && this.state.content[winnerArr[5][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[6][0]] == 'X' && this.state.content[winnerArr[6][1]] == 'X' && this.state.content[winnerArr[6][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[7][0]] == 'X' && this.state.content[winnerArr[7][1]] == 'X' && this.state.content[winnerArr[7][2]] == 'X'){
           this.setState({
-            winner: 'Winner is X'
+            winner: 'Winner is X',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[0][0]] == 'O' && this.state.content[winnerArr[0][1]] == 'O' && this.state.content[winnerArr[0][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[1][0]] == 'O' && this.state.content[winnerArr[1][1]] == 'O' && this.state.content[winnerArr[1][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[2][0]] == 'O' && this.state.content[winnerArr[2][1]] == 'O' && this.state.content[winnerArr[3][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[3][0]] == 'O' && this.state.content[winnerArr[3][1]] == 'O' && this.state.content[winnerArr[3][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[4][0]] == 'O' && this.state.content[winnerArr[4][1]] == 'O' && this.state.content[winnerArr[4][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[5][0]] == 'O' && this.state.content[winnerArr[5][1]] == 'O' && this.state.content[winnerArr[5][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[6][0]] == 'O' && this.state.content[winnerArr[6][1]] == 'O' && this.state.content[winnerArr[6][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else if(this.state.content[winnerArr[7][0]] == 'O' && this.state.content[winnerArr[7][1]] == 'O' && this.state.content[winnerArr[7][2]] == 'O'){
           this.setState({
-            winner: 'Winner is O'
+            winner: 'Winner is O',
+            content: ''
           })
+          turn = 'Turn of X'
+          obj = {}
+          i = -1
         }
         else {
           if(i >= 8){
             this.setState({
-              winner: 'Draw'
+              winner: 'Draw',
+              content: ''
             })
+            turn = 'Turn of X'
+            obj = {}
+            i = -1
           }
         }
+        console.log(i)
         i = i + 1
+    }
+
+    resetBoard = () => {
+        this.setState({
+          content: ''
+        })
+        turn = 'Turn of X'
+        obj = {}
+        i = 0
     }
 
     render(){
       return(
         <div>
-          <div>{this.state.turn}</div>
-          <div>
-            <table>
-              <tbody>
-                <tr>
-                  <td><button id='p1' onClick = {this.buttonClick} disabled = {this.state.content.p1}>{this.state.content.p1}</button></td>
-                  <td><button id='p2' onClick = {this.buttonClick} disabled = {this.state.content.p2}>{this.state.content.p2}</button></td>
-                  <td><button id='p3' onClick = {this.buttonClick} disabled = {this.state.content.p3}>{this.state.content.p3}</button></td>
-                </tr>
-                <tr>
-                  <td><button id='p4' onClick = {this.buttonClick} disabled = {this.state.content.p4}>{this.state.content.p4}</button></td>
-                  <td><button id='p5' onClick = {this.buttonClick} disabled = {this.state.content.p5}>{this.state.content.p5}</button></td>
-                  <td><button id='p6' onClick = {this.buttonClick} disabled = {this.state.content.p6}>{this.state.content.p6}</button></td>
-                </tr>
-                <tr>
-                  <td><button id='p7' onClick = {this.buttonClick} disabled = {this.state.content.p7}>{this.state.content.p7}</button></td>
-                  <td><button id='p8' onClick = {this.buttonClick} disabled = {this.state.content.p8}>{this.state.content.p8}</button></td>
-                  <td><button id='p9' onClick = {this.buttonClick} disabled = {this.state.content.p9}>{this.state.content.p9}</button></td>
-                </tr>
-              </tbody>
-            </table>
+          <div className = 'header'>
+            <span>TIC TAC TOE</span>
           </div>
-          <div>{this.state.winner}</div>
+          <center>
+            <div className = 'turnDesc'>{turn}</div>
+            <div>
+              <table className = 'board'>
+                <tbody>
+                  <tr>
+                    <td><button id='p1' onClick = {this.buttonClick} disabled = {this.state.content.p1}>{this.state.content.p1}</button></td>
+                    <td><button id='p2' onClick = {this.buttonClick} disabled = {this.state.content.p2}>{this.state.content.p2}</button></td>
+                    <td><button id='p3' onClick = {this.buttonClick} disabled = {this.state.content.p3}>{this.state.content.p3}</button></td>
+                  </tr>
+                  <tr>
+                    <td><button id='p4' onClick = {this.buttonClick} disabled = {this.state.content.p4}>{this.state.content.p4}</button></td>
+                    <td><button id='p5' onClick = {this.buttonClick} disabled = {this.state.content.p5}>{this.state.content.p5}</button></td>
+                    <td><button id='p6' onClick = {this.buttonClick} disabled = {this.state.content.p6}>{this.state.content.p6}</button></td>
+                  </tr>
+                  <tr>
+                    <td><button id='p7' onClick = {this.buttonClick} disabled = {this.state.content.p7}>{this.state.content.p7}</button></td>
+                    <td><button id='p8' onClick = {this.buttonClick} disabled = {this.state.content.p8}>{this.state.content.p8}</button></td>
+                    <td><button id='p9' onClick = {this.buttonClick} disabled = {this.state.content.p9}>{this.state.content.p9}</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className = 'winnerDesc'>{this.state.winner}</div>
+            <div className = 'buttonDiv'>
+              <button className = 'undoButton'>UNDO</button>
+              <button className = 'resetButton' onClick = {this.resetBoard}>RESET</button>
+            </div>
+          </center>
         </div>
       )
     }

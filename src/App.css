@@ -1,7 +1,59 @@
 button {
-  height: 30px;
-  width: 30px;
-  font-size: 20px;
-  border: 1px solid black;
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
   background-color: white;
+  border-radius: 2px;
+}
+
+.board {
+  border-collapse: collapse;
+  border:0
+}
+
+td {
+  padding: 0;
+}
+
+.header {
+  padding: 20px 0px;
+  background-color: #A569BD;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.turnDesc, .winnerDesc {
+  color: #2C3E50;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.buttonDiv {
+  padding: 20px;
+  position: fixed;
+  margin-left: 40%;
+}
+
+.undoButton {
+  width: 100px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #1ABC9C;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.resetButton {
+  width: 100px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #E74C3C;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
 }
