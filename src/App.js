@@ -12,6 +12,9 @@ class App extends Component {
         content: {},
         winner: '',
         disabled: '',
+        Xwins: 0,
+        Owins: 0,
+        draw: 0,
       }
     }
 
@@ -44,6 +47,7 @@ class App extends Component {
         if(this.state.content[winnerArr[0][0]] == 'X' && this.state.content[winnerArr[0][1]] == 'X' && this.state.content[winnerArr[0][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -53,6 +57,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[1][0]] == 'X' && this.state.content[winnerArr[1][1]] == 'X' && this.state.content[winnerArr[1][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -62,6 +67,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[2][0]] == 'X' && this.state.content[winnerArr[2][1]] == 'X' && this.state.content[winnerArr[3][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -71,6 +77,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[3][0]] == 'X' && this.state.content[winnerArr[3][1]] == 'X' && this.state.content[winnerArr[3][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -80,6 +87,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[4][0]] == 'X' && this.state.content[winnerArr[4][1]] == 'X' && this.state.content[winnerArr[4][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -89,6 +97,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[5][0]] == 'X' && this.state.content[winnerArr[5][1]] == 'X' && this.state.content[winnerArr[5][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -98,6 +107,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[6][0]] == 'X' && this.state.content[winnerArr[6][1]] == 'X' && this.state.content[winnerArr[6][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -107,6 +117,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[7][0]] == 'X' && this.state.content[winnerArr[7][1]] == 'X' && this.state.content[winnerArr[7][2]] == 'X'){
           this.setState({
             winner: 'Winner is X',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -116,6 +127,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[0][0]] == 'O' && this.state.content[winnerArr[0][1]] == 'O' && this.state.content[winnerArr[0][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Xwins: this.state.Xwins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -125,6 +137,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[1][0]] == 'O' && this.state.content[winnerArr[1][1]] == 'O' && this.state.content[winnerArr[1][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -134,6 +147,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[2][0]] == 'O' && this.state.content[winnerArr[2][1]] == 'O' && this.state.content[winnerArr[3][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -143,6 +157,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[3][0]] == 'O' && this.state.content[winnerArr[3][1]] == 'O' && this.state.content[winnerArr[3][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -152,6 +167,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[4][0]] == 'O' && this.state.content[winnerArr[4][1]] == 'O' && this.state.content[winnerArr[4][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -161,6 +177,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[5][0]] == 'O' && this.state.content[winnerArr[5][1]] == 'O' && this.state.content[winnerArr[5][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -170,6 +187,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[6][0]] == 'O' && this.state.content[winnerArr[6][1]] == 'O' && this.state.content[winnerArr[6][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -179,6 +197,7 @@ class App extends Component {
         else if(this.state.content[winnerArr[7][0]] == 'O' && this.state.content[winnerArr[7][1]] == 'O' && this.state.content[winnerArr[7][2]] == 'O'){
           this.setState({
             winner: 'Winner is O',
+            Owins: this.state.Owins + 1,
             content: ''
           })
           turn = 'Turn of X'
@@ -189,6 +208,7 @@ class App extends Component {
           if(i >= 8){
             this.setState({
               winner: 'Draw',
+              draw: this.state.draw + 1,
               content: ''
             })
             turn = 'Turn of X'
@@ -216,6 +236,11 @@ class App extends Component {
             <span>TIC TAC TOE</span>
           </div>
           <center>
+            <div className = 'wincontainer'>
+              <span>X won: <b>{this.state.Xwins}</b> games</span>
+              <span className = 'wins'>O won: <b>{this.state.Owins}</b> games</span>
+              <span className = 'wins'>Draw: <b>{this.state.draw}</b> games</span>
+            </div>
             <div className = 'turnDesc'>{turn}</div>
             <div>
               <table className = 'board'>
