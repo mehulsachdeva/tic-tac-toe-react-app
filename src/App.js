@@ -229,6 +229,14 @@ class App extends Component {
         i = 0
     }
 
+    clearWinHistory = () => {
+      this.setState({
+        Xwins: 0,
+        Owins: 0,
+        draw: 0
+      })
+    }
+
     render(){
       return(
         <div>
@@ -240,6 +248,9 @@ class App extends Component {
               <span>X won: <b>{this.state.Xwins}</b> games</span>
               <span className = 'wins'>O won: <b>{this.state.Owins}</b> games</span>
               <span className = 'wins'>Draw: <b>{this.state.draw}</b> games</span>
+            </div>
+            <div className = 'buttonClearDiv'>
+              <button className = 'clearWin' onClick = {this.clearWinHistory}>CLEAR</button>
             </div>
             <div className = 'turnDesc'>{turn}</div>
             <div>
