@@ -6,6 +6,8 @@ let i = 0
 let turn = 'Turn of X'
 
 class App extends Component {
+
+  //*********** Intializing *************
   constructor(props){
       super(props)
       this.state = {
@@ -18,6 +20,7 @@ class App extends Component {
       }
     }
 
+    //************ Display X or O depending on turn **************
     buttonClick = (event) => {
         event.preventDefault()
 
@@ -220,6 +223,7 @@ class App extends Component {
         i = i + 1
     }
 
+    //*********** Reset Board ***********
     resetBoard = () => {
         this.setState({
           content: ''
@@ -229,6 +233,7 @@ class App extends Component {
         i = 0
     }
 
+    //*********** Clear Win History ************
     clearWinHistory = () => {
       this.setState({
         Xwins: 0,
